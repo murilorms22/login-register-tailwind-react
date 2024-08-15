@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-internal-border {
+  position: relative;
+}
+
+.btn-internal-border::before {
+  content: "";
+  position: absolute;
+  border-radius: 0.75rem;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  border: 2px solid;
+}
+
+.map {
+  height: 400px;
+  width: 400px;
+}
+
+.merda {
+  margin-top: 34%;
+}
